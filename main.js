@@ -43,7 +43,7 @@ function outputData(person) {
 
   // REGEX RULES AND ADDING CSS CLASSES TO ROWS FOR TOGGLING
   // Add a class to actors
-  if ((new RegExp(/schauspieler/gi)).test(person.profession)) {
+  if ((new RegExp(/actor/gi)).test(person.profession)) {
     row.classList.add('actor');
   }
   // Add a class to Austrians
@@ -51,8 +51,8 @@ function outputData(person) {
     row.classList.add('american');
   }
   // Add a class to Auto*
-  if ((new RegExp(/auto/gi)).test(person.profession)) {
-    row.classList.add('auto');
+  if ((new RegExp(/author/gi)).test(person.profession)) {
+    row.classList.add('author');
   }
 
 }
