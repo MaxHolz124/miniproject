@@ -33,11 +33,13 @@ function outputData(person) {
   var cell_2 = row.insertCell(1);
   var cell_3 = row.insertCell(2);
   var cell_4 = row.insertCell(3);
+  var cell_5 = row.insertCell(4);
   // Add some text to the new cells:
   cell_1.innerHTML = person.birthyear;
   cell_2.innerHTML = '<a href="'+person.link+'" target="_blank">'+prettyName+'</a>';
   cell_3.innerHTML = person.profession;
   cell_4.innerHTML = person.day + ' ' + person.month + ' 2011';
+  cell_5.innerHTML = person.birhday;
 
   // REGEX RULES AND ADDING CSS CLASSES TO ROWS FOR TOGGLING
   // Add a class to actors
